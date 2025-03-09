@@ -25,6 +25,7 @@
     pkgs.wasm-pack
     pkgs.binaryen # use a newer version of wasm-opt
     pkgs.nodejs
+    pkgs.git
   ] ++ lib.optionals pkgs.stdenv.isDarwin (with pkgs.darwin.apple_sdk; [
     frameworks.Security
   ]);
